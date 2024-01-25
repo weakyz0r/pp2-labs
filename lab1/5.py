@@ -1,2 +1,1 @@
 carname = "Volvo"
-print(carname)
