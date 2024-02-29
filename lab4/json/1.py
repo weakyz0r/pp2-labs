@@ -52,4 +52,4 @@ json_string = json.dumps(x)
 y = json.loads(json_string)
 
 # Accessing the value of "speed" attribute
-print(y["l1PhysIf"]["attributes"]["speed"])
+print(y["l1PhysIf"]["attributes"]["status"])

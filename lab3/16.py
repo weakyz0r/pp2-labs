@@ -72,35 +72,6 @@ s = str(input())
 rev(s)
 
 #ex7
-def has33(x):
-  l = len(x)
-  for i in range(l - 1):
-    if x[i] == 3 and x[i+1] == 3:
-      return True
-  return False
-    
-  
-  
-x1 = ([1,3,3])
-x2 = ([1,2,3,4])
-x3 = ([3,1,3])
-
-print(has33(x1))
-print(has33(x2))
-print(has33(x3))
-
-#ex8
-def spy_game(n):
-  for i in range(len(n) - 1):
-    if n[i] == 0 and n[i+1] == 0 and n[i+2] == 7:
-      return True
-  return False
-
-print(spy_game([1,2,4,0,0,7,5]))
-print(spy_game([1,0,2,4,0,5,7]))
-print(spy_game([1,7,2,0,4,5,0]))
-
-#ex9
 import math
 
 def vol(r):
@@ -109,20 +80,8 @@ def vol(r):
   
 r = int(input())
 vol(r)
-
-#ex10
-list1 = [100,100,20,30,400,45,45,100,20,5]
-
-res = []
-
-for item in list1:
-  if item not in res:
-    res.append(item)
-    
-for item in res:
-  print(item)
   
-#ex11
+#ex8
 def isPalindrome(s):
   if s == s[::-1]:
     return True
@@ -134,7 +93,7 @@ if isPalindrome(s):
 else: 
   print("No")
   
-#ex12
+#ex9
 def histogram(x):
   for i in range(len(x)):
     print("*" * x[i])
@@ -142,28 +101,7 @@ def histogram(x):
 x = ([4,9,7])
 histogram(x)
 
-#ex13
+#ex10
 import random
 print(random.randrange(1,20))
-    
-#ex14
-import random
-
-arr = []
-for i in range(10):
-  arr.insert(i,random.randrange(1,10))
-r = random.randrange(1,10)
-
-def has(x):
   
-
-  for i in range(len(x) - 1):
-    if x[i] == r and x[i + 1] == r:
-      True
-    else:
-      False
-      
-if has(arr):
-  print("This random number: " + str(r) + " occurs twice in a row in this random list: " + str(arr))
-else:
-  print("This random number: " + str(r) + " doesn't occur twice in a row in this random list: " + str(arr))

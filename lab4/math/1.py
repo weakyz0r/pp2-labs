@@ -1,12 +1,10 @@
 import math
 
-def degree_to_radian(degrees):
-    radians = degrees * (math.pi / 180)
-    return radians
+def degree_to_radian(degree):
+    radian = degree * (math.pi / 180)
+    return radian
 
-# Example degree value
-degrees_value = 90
+degree = float(input("Input degree: "))
+radian = degree_to_radian(degree)
+print("Output radian:", radian)
 
-radians_value = degree_to_radian(degrees_value)
-
-print(degrees_value, "degrees is equal to", radians_value, "radians.")

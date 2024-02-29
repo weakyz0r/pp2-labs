@@ -1,7 +1,9 @@
 def my_function(**kid):
   print("His last name is " + kid["lname"])
 
-  '''
+my_function(rname = "igor",lname = "vasya")
+
+'''
   def my_function(child3, child2, child1):
   print("The youngest child is " + child3)
 

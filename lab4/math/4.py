@@ -2,10 +2,8 @@ def parallelogram_area(base, height):
     area = base * height
     return area
 
-# Example values
-base_length = 6
-height_length = 8
+base = float(input("Length of base: "))
+height = float(input("Height of parallelogram: "))
+area = parallelogram_area(base, height)
 
-area = parallelogram_area(base_length, height_length)
-
-print("The area of the parallelogram is:", area)
+print("Expected Output:", area)

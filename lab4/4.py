@@ -1,16 +1,20 @@
 from datetime import datetime
 
-def date_difference_in_seconds(date1, date2):
-    # Calculate the difference between the two dates
-    difference = date2 - date1
-    # Convert the difference to seconds
-    difference_in_seconds = difference.total_seconds()
-    return difference_in_seconds
+def difference_in_seconds(date1, date2):
+    datetime1 = datetime.strptime(date1, "%Y-%m-%d %H:%M:%S")
+    datetime2 = datetime.strptime(date2, "%Y-%m-%d %H:%M:%S")
 
-date1 = datetime(2023, 6, 1, 12, 0, 0)  # First date
-date2 = datetime(2023, 6, 2, 12, 0, 0)  # Second date
+    difference = abs((datetime2 - datetime1).total_seconds())
+    
+    return difference
 
-# Calculate the difference in seconds
-difference_seconds = date_difference_in_seconds(date1, date2)
+date1 = input("1st date is : ")
+date2 = input("2nd date is : ")
 
-print("Difference between the two dates in seconds:", difference_seconds)
+difference_seconds = difference_in_seconds(date1, date2)
+print("Difference in sec-s:", difference_seconds)
+
+
+
+
+# print(x.strftime("%A"))
