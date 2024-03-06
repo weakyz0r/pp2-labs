@@ -14,10 +14,6 @@ print(x)
 
 test1 ="aqua abobus abbus abberation"
 #test1 = input("Введите строку: ")
-x=re.findall(r"\S*ab{0}\S*", test1)
-print(x)
-
-
 x=re.findall(r"\S*ab*\S*", test1)
 print(x)
 
@@ -64,7 +60,7 @@ test1 = "snake_people"
 x = re.sub(r'_([\w])', lambda x: x.group(1).upper(), test1)
 print(x)
 
-#snake - my_home ; my_various ; low_case
+#snake - my_home ; my_various ; low_case myHome
 #camel - myClassHome ; myHome ; myRound 
 
 #snake_case_string = "my_variable_name"
